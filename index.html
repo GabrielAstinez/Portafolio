@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NastycStudios – Indie Game Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#inicio" class="nav-logo">🎮</a>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#inicio" class="active" onclick="setActive(this)">Inicio</a>
+        </li>
+        <li><a href="#sobre" onclick="setActive(this)">Sobre mí</a></li>
+        <li>
+          <a href="#videojuegos" onclick="setActive(this)">Videojuegos</a>
+        </li>
+        <li><a href="#assets" onclick="setActive(this)">Assets</a></li>
+        <li><a href="#contacto" onclick="setActive(this)">Contacto</a></li>
+        <li>
+          <a href="#contacto" class="btn-hire" onclick="closeMenu()"
+            >CONTRATAR</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <section id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-corner tl"></div>
+      <div class="hero-corner tr"></div>
+      <div class="hero-corner bl"></div>
+      <div class="hero-corner br"></div>
+
+      <div class="available-badge">DISPONIBLE PARA PROYECTOS</div>
+
+      <div class="hero-title">
+        <h1>GABRIEL<span>ASTUDILLO</span></h1>
+      </div>
+
+      <div class="hero-typewriter"><span id="typewriter-text"></span></div>
+
+      <p class="hero-desc">
+        Me llamo Gabriel Astudillo, soy estudiante de Ingeniería en realidad
+        virtual y diseño de juegos digitales en 5to año, me dedico al diseño de
+        assets en 2D y 3D, diseño de videojuegos y programación especializado en
+        Unity.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#videojuegos" class="btn-primary">VER PROYECTOS</a>
+        <a href="#contacto" class="btn-secondary">CONTACTAR</a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="centered reveal">
+        <div class="section-tag">SOBRE MÍ</div>
+        <h2 class="section-title">El estudiante detrás del código</h2>
+        <div class="section-underline"></div>
+        <p class="section-desc">
+          Soy Gabriel Astudillo, estudiante de 5to año apasionado por crear
+          mundos interactivos. Cada proyecto es una historia que espera ser
+          jugada.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-tag">BIO.EXE</div>
+          <div class="bio-inner">
+            <div class="bio-avatar">🎮</div>
+            <div>
+              <div class="bio-name">Gabriel Astudillo</div>
+              <div class="bio-role">
+                Estudiante de Ingeniería en RV & Diseño de Juegos
+              </div>
+              <div class="bio-text">
+                Estudiante de 5to año con más de 3 años desarrollando
+                videojuegos como proyectos académicos y personales. Me
+                especializo en Unity, diseño de assets 2D/3D y programación de
+                sistemas de juego.
+              </div>
+            </div>
+          </div>
+          <div class="bio-divider"></div>
+          <div class="bio-extra">
+            He trabajado en proyectos universitarios y jam games que abarcan
+            desde prototipado rápido hasta demos jugables completos con arte,
+            mecánicas y narrativa propios.
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="tech-header">STACK TECNOLÓGICO</div>
+          <div class="tech-list">
+            <div class="tech-item">
+              <div class="tech-label">🖥️ Unity / C#</div>
+              <div class="tech-bar">
+                <div class="tech-bar-fill bar-green" data-width="92"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-label">🎮 Unreal Engine 5</div>
+              <div class="tech-bar">
+                <div class="tech-bar-fill bar-red" data-width="55"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-label">🧊 Blender 3D</div>
+              <div class="tech-bar">
+                <div class="tech-bar-fill bar-gold" data-width="75"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-label">🎨 Pixel Art</div>
+              <div class="tech-bar">
+                <div class="tech-bar-fill bar-cyan" data-width="88"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-label">&lt;/&gt; C++</div>
+              <div class="tech-bar-row">
+                <div class="tech-bar flex1">
+                  <div class="tech-bar-fill bar-gold" data-width="70"></div>
+                </div>
+                <span class="tech-percent">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bio-divider"></div>
+          <div class="badges-grid">
+            <div class="badge-item">
+              <span class="badge-icon">🎮</span> Unity Certified
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon gold">🏆</span> Indie Game Awards
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">🌐</span> Proyectos globales
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon gold">⏱️</span> Entrega a tiempo
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videojuegos">
+      <div class="centered reveal">
+        <div class="section-tag">VIDEOJUEGOS</div>
+        <h2 class="section-title">Proyectos universitarios</h2>
+        <div class="section-underline"></div>
+        <p class="section-desc">
+          Haz clic en cualquier proyecto para ver todos los detalles,
+          tecnologías usadas y capturas del juego.
+        </p>
+      </div>
+      <div class="games-grid" id="gamesGrid"></div>
+    </section>
+
+    <section id="assets">
+      <div class="centered reveal">
+        <h2 class="section-title">Assets y recursos</h2>
+        <div class="section-underline"></div>
+        <p class="section-desc">
+          Sprites, tilesets y más recursos que he creado y subido a itch.io.
+          Libres para usar en tus propios proyectos.
+        </p>
+      </div>
+      <div class="assets-grid" id="assetsGrid"></div>
+    </section>
+
+    <section id="contacto">
+      <div class="centered reveal">
+        <div class="section-tag">CONTACTO</div>
+        <h2 class="section-title">Hablemos de tu proyecto</h2>
+        <div class="section-underline"></div>
+        <p class="section-desc">
+          ¿Tienes una propuesta o proyecto? Cuéntame. Respondo en menos de 24
+          horas.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <div class="contact-icon icon-green">✉️</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">
+                gabriel.astudillo@example.com
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon icon-gold">⏱️</div>
+            <div>
+              <div class="contact-info-label">Tiempo de respuesta</div>
+              <div class="contact-info-value">Menos de 24h</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon icon-cyan">🌐</div>
+            <div>
+              <div class="contact-info-label">Disponibilidad</div>
+              <div class="contact-info-value">Proyectos remotos globales</div>
+            </div>
+          </div>
+          <div class="social-section">
+            <div class="social-title">REDES SOCIALES</div>
+            <div class="social-grid">
+              <a
+                href="https://www.linkedin.com/in/gabriel-astudillo-ba8821267/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                >in LinkedIn</a
+              >
+              <a
+                href="https://github.com/GabrielAstinez"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                >⌥ GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">NOMBRE *</label>
+              <input type="text" class="form-input" placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">EMAIL *</label>
+              <input
+                type="email"
+                class="form-input"
+                placeholder="tu@email.com"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">SERVICIO</label>
+            <select class="form-select form-input">
+              <option>Desarrollo completo de videojuego</option>
+              <option>Prototipo / MVP</option>
+              <option>Asset personalizado</option>
+              <option>Consultoría game dev</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">MENSAJE *</label>
+            <textarea
+              class="form-textarea"
+              id="contactMsg"
+              placeholder="Cuéntame sobre tu proyecto, idea, o lo que necesites..."
+              maxlength="500"
+              oninput="updateCounter()"
+            ></textarea>
+            <div class="form-counter"><span id="msgCount">0</span>/500</div>
+          </div>
+          <button class="btn-submit" onclick="sendMessage()">
+            ENVIAR MENSAJE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">🎮</div>
+          <p class="footer-brand-desc">
+            Estudiante de Ingeniería en Realidad Virtual y Diseño de Juegos.
+            Apasionado por crear experiencias interactivas desde cero,
+            combinando programación, arte y diseño de niveles.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/gabriel-astudillo-ba8821267/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              >in</a
+            >
+            <a
+              href="https://github.com/GabrielAstinez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-btn"
+              >⌥</a
+            >
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>NAVEGACIÓN</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#videojuegos">Videojuegos</a></li>
+            <li><a href="#assets">Assets</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SERVICIOS</h4>
+          <ul class="footer-links">
+            <li><a href="#contacto">Desarrollo de juegos</a></li>
+            <li><a href="#contacto">Prototipos y MVPs</a></li>
+            <li><a href="#assets">Assets personalizados</a></li>
+            <li><a href="#contacto">Consultoría game dev</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2025 Gabriel Astudillo. Todos los derechos reservados.
+        </div>
+        <div class="footer-available">DISPONIBLE PARA PROYECTOS</div>
+      </div>
+    </footer>
+
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      onclick="closeModalOutside(event)"
+    >
+      <div class="modal" id="modal">
+        <div class="modal-img" id="modalImg"></div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
